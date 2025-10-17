@@ -1,0 +1,157 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Irish Grover", sans-serif;
+  color: #23022E;               
+  background: #573280;      
+}
+
+/* ====== Nagłówek ====== */
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 2rem 0 2rem; 
+}
+
+#app {
+  max-width: 65rem;
+  margin: auto;
+  padding: 0 1rem;
+}
+
+/*##########################*/
+/* SEARCH SECTION*/
+
+.search-section {           
+  margin-bottom: 50px;  
+  align-items: center;      
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin: 0;   
+}
+
+.search-input {
+  padding: 1rem;
+  padding-left: 1.5rem;
+  font-size: 1rem;
+  border: 2px solid #23022E;  
+  width: 80%; 
+  max-width: 600px;  
+  background-color: #F5F5F5; 
+  border-radius: 40px 0 0 40px; 
+  font-style: italic; 
+  color: #929292;      
+}
+
+.search-button {
+  font-size: 1rem;
+  border: 2px solid #23022E;         
+  background-color: #23022E;  
+  color: #F5F5F5;
+  width: 6rem;
+  text-align: center;
+  border-radius: 0 40px 40px 0;    
+  font-weight: bold;           
+  cursor: pointer;
+}
+
+/*##########################*/
+/* LOADING */
+
+.loading-hidden {
+    display: none;
+}
+
+.loading-visible {
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 1.5rem;
+    font-weight: bold;
+}
+
+/*##########################*/
+/* POKEMNONS CARDS */
+
+.list-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 12rem); 
+  justify-content: center; 
+  gap: 1rem;
+  padding-bottom: 1.5rem;
+}
+
+.pokemon-list-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 16rem;
+    width: 12rem;
+    border: #23022E 2px solid;
+    background-color: #afbbf2;
+    border-radius: 1.5rem;
+    gap: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.pokemon-image {
+  width: 10rem;
+  height: 10rem;
+}
+
+.pokemon-name {
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    letter-spacing: 0.3rem;
+}
+
+/*##########################*/
+/* SZCZEGOLY SEKCJA */
+
+.details-section {
+  border: #23022E 2px solid;
+  background-color: #afbbf2;
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: large;
+}
+
+.details-section h1 {
+    margin: 0;
+    text-transform: capitalize;
+    text-decoration: underline;
+    margin-bottom: 2rem;
+}
+
+.details-section h3 {
+    margin-top: 2rem;
+    text-transform: capitalize;
+    font-size: x-large;
+    font-size: 1.2rem;
+    text-decoration: underline;
+}
+
+.typesBox {
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+}
+
+.typBox {
+    background-color: #929292;
+    padding: 0.25rem 1rem 0.25rem 1rem;
+    border-radius: 1rem;
+    border: 2px solid #23022E;
+}
+
