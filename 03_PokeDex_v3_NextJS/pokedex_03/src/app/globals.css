@@ -1,0 +1,283 @@
+/* GameDex Styles - przekształcone z wersji React */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Irish Grover", sans-serif;
+  color: #23022E;
+  background: #573280;
+}
+
+/* ====== Nagłówek ====== */
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 2rem 0 2rem;
+}
+
+#root-app {
+  max-width: 65rem;
+  margin: auto;
+  padding: 0 1rem;
+}
+
+/* SEARCH + TOOLBAR */
+.search-section {
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  gap: 0;
+}
+
+.search-input {
+  padding: 1rem;
+  padding-left: 1.5rem;
+  font-size: 1rem;
+  border: 2px solid #23022E;
+  width: 80%;
+  max-width: 600px;
+  background-color: #F5F5F5;
+  border-radius: 40px 0 0 40px;
+  font-style: italic;
+  color: #333;
+}
+
+.search-button {
+  font-size: 1rem;
+  border: 2px solid #23022E;
+  background-color: #23022E;
+  color: #F5F5F5;
+  width: 6rem;
+  text-align: center;
+  border-radius: 0 40px 40px 0;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* FILTERS */
+.filters {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.filters-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+.filter-btn {
+  border: 2px solid #23022E;
+  background: #afbbf2;
+  color: #23022E;
+  padding: 0.3rem 0.8rem;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.filter-btn--active {
+  background: #23022E;
+  color: #F5F5F5;
+}
+
+.filters-actions {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+.btn-secondary {
+  border: 2px solid #23022E;
+  background: #F5F5F5;
+  color: #23022E;
+  padding: 0.3rem 0.8rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* LOADING & ERROR */
+.loading-visible {
+  display: block;
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 1.5rem;
+  font-weight: bold;
+}
+
+.error-box {
+  margin: 1rem auto;
+  max-width: 40rem;
+  background: #fef2f2;
+  color: #b91c1c;
+  border: 2px solid #b91c1c;
+  padding: 1rem;
+  border-radius: 12px;
+}
+
+/* GRID LIST */
+.list-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 12rem);
+  justify-content: center;
+  gap: 1rem;
+  padding-bottom: 1.5rem;
+}
+
+.pokemon-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 16rem;
+  width: 12rem;
+  border: #23022E 2px solid;
+  background-color: #afbbf2;
+  border-radius: 1.5rem;
+  gap: 0.6rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform .08s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+.pokemon-list-item:hover {
+  transform: translateY(-2px);
+}
+
+.pokemon-image {
+  width: 9rem;
+  height: 9rem;
+  object-fit: contain;
+}
+
+.pokemon-name {
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 1.1rem;
+  letter-spacing: 0.2rem;
+}
+
+.mini-types {
+  display: flex;
+  gap: .4rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.typBox {
+  background-color: #929292;
+  padding: 0.25rem 1rem;
+  border-radius: 1rem;
+  border: 2px solid #23022E;
+  color: #F5F5F5;
+  text-transform: capitalize;
+}
+
+.typBox--small {
+  padding: 0.15rem 0.7rem;
+  border-width: 1px;
+  font-size: .85rem;
+}
+
+/* DETAILS */
+.details-section {
+  border: #23022E 2px solid;
+  background-color: #afbbf2;
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: large;
+  gap: 1rem;
+}
+
+.details-section h1 {
+  margin: 0;
+  text-transform: capitalize;
+  text-decoration: underline;
+  margin-bottom: 1rem;
+}
+
+.details-section h3 {
+  margin-top: 1rem;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  text-decoration: underline;
+}
+
+.typesBox {
+  display: flex;
+  gap: 0.6rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* abilities */
+.abilities {
+  margin: 0.5rem 0 0 1rem;
+}
+.ability {
+  text-transform: capitalize;
+}
+.ability--hidden {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+/* stats */
+.statsBox {
+  min-width: 18rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.stat-row {
+  display: grid;
+  grid-template-columns: 7rem 1fr 3rem;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.stat-label {
+  text-transform: capitalize;
+}
+
+.stat-bar {
+  height: 12px;
+  background: rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid rgba(0,0,0,0.2);
+}
+
+.stat-fill {
+  height: 100%;
+}
+
+.stat-value {
+  text-align: right;
+}
+
+.stats-total {
+  margin-top: .6rem;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.first-col, .second-col {
+  flex: 1;
+}
